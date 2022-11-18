@@ -88,7 +88,7 @@ static uint8_t suart_getc_(uint8_t *bt)
     }
     // start bit
     start_time = micros();
-    btime = start_time + START_BIT_TIME;
+    btime = start_time + BIT_TIME_HALVE;
     uint16_t bitmask = 0;
     uint8_t bit = 0;
     while (micros() < btime);

@@ -13,6 +13,7 @@ TARGET_SRC = \
             drivers/barometer/barometer_dps310.c\
             drivers/compass/compass_hmc5883l.c\
             drivers/compass/compass_qmc5883l.c\
+            drivers/accgyro/accgyro_spi_bmi088_acc.c \
             $(ROOT)/lib/main/BoschSensortec/BMI270-Sensor-API/bmi270.c \
             drivers/accgyro/accgyro_spi_bmi270.c\
             drivers/accgyro/accgyro_spi_lsm6dsl_init.c \

@@ -290,6 +290,15 @@ retry:
         FALLTHROUGH;
 #endif
 
+#ifdef USE_ACCGYRP_BMI088
+    case ACC_BMI088:
+        if (bmi088AccDetect(dev)) {
+            accHardware = ACC_BMI088;
+            break;
+        }
+        FALLTHROUGH;
+#endif
+
 #ifdef USE_ACCGYRO_BMI160
     case ACC_BMI160:
         if (bmi160SpiAccDetect(dev)) {
